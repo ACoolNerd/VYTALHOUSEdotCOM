@@ -15,11 +15,13 @@ RUN npm run build
 # Stage 2: Serve static files with Nginx
 FROM nginx:alpine
 
-# Copy custom Nginx configuration for React SPA routing
-COPY <<'EOF' /etc/nginx/conf.d/default.conf
+# Configure Nginx for Cloud Run PORT dynamic listening and SPA routing
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY <<'EOF' /etc/nginx/templates/default.conf.template
 server {
-    listen 80;
-    server_name localhost;
+    listen ${PORT};
+    server_name _;
     root /usr/share/nginx/html;
     index index.html;
 
@@ -34,9 +36,11 @@ server {
 }
 EOF
 
+ENV PORT=8080
+
 # Copy production dist output from Stage 1
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
