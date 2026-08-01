@@ -1,0 +1,13 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: vytal-house
+build:
+  artifacts:
+    - image: gcr.io/vytal-house/vytal-house-web
+      docker:
+        dockerfile: Dockerfile
+manifests:
+  rawYaml:
+    - kubernetes-manifests/vytal-house.deployment.yaml
+    - kubernetes-manifests/vytal-house.service.yaml

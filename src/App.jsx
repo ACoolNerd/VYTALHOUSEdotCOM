@@ -1,0 +1,57 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+
+// Pages
+import Home from './pages/Home';
+import Reset from './pages/Reset';
+import Restorations from './pages/Restorations';
+import RestorationDetail from './pages/RestorationDetail';
+import Modalities from './pages/Modalities';
+import MedicalIndex from './pages/MedicalIndex';
+import MedicalIV from './pages/MedicalIV';
+import MedicalBloodwork from './pages/MedicalBloodwork';
+import MedicalAesthetics from './pages/MedicalAesthetics';
+import Membership from './pages/Membership';
+import VytalIndexPage from './pages/VytalIndexPage';
+import House from './pages/House';
+import Team from './pages/Team';
+import Events from './pages/Events';
+import Journal from './pages/Journal';
+import Contact from './pages/Contact';
+import BookRouter from './pages/BookRouter';
+import AccountPortal from './pages/AccountPortal';
+import LegalPage from './pages/legal/LegalPage';
+
+export default function App() {
+  return (
+    <div className="flex flex-col min-h-screen bg-[#0B0F17] text-gray-100 font-sans selection:bg-[#C5A059] selection:text-black">
+      <Header />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reset" element={<Reset />} />
+          <Route path="/restorations" element={<Restorations />} />
+          <Route path="/restorations/:slug" element={<RestorationDetail />} />
+          <Route path="/modalities" element={<Modalities />} />
+          <Route path="/medical" element={<MedicalIndex />} />
+          <Route path="/medical/iv" element={<MedicalIV />} />
+          <Route path="/medical/bloodwork" element={<MedicalBloodwork />} />
+          <Route path="/medical/aesthetics" element={<MedicalAesthetics />} />
+          <Route path="/membership" element={<Membership />} />
+          <Route path="/index" element={<VytalIndexPage />} />
+          <Route path="/house" element={<House />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/journal" element={<Journal />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/book" element={<BookRouter />} />
+          <Route path="/account" element={<AccountPortal />} />
+          <Route path="/legal/:slug" element={<LegalPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+}
