@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Activity, ShieldCheck, FileText, Lock, HeartHandshake } from 'lucide-react';
+import { Activity, ShieldCheck, FileText, Lock, HeartHandshake, ExternalLink } from 'lucide-react';
 import { CPOM_ENTITIES, MEDICAL_DIRECTOR } from '../../data/masterSpecData';
 import PlaceholderBadge from '../ui/PlaceholderBadge';
 
@@ -119,7 +119,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Footer Legal Stack (Section 2 - Rule 5) */}
+        {/* Footer Legal Stack */}
         <div className="pt-8 border-t border-[#232D40] flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-gray-400">
             {legalLinks.map((item) => (
@@ -131,6 +131,38 @@ export default function Footer() {
 
           <div className="text-gray-500 text-[11px] text-center md:text-right">
             Maryland CPOM MSA Protected • No Unregistered Clinical Claims
+          </div>
+        </div>
+
+        {/* Custom ACoolNERD & ACoolWEBSITE Signature Credit Line */}
+        <div className="mt-8 pt-6 border-t border-[#1C2536] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-gray-400">
+          <div className="flex items-center gap-1.5">
+            <a 
+              href="https://instagram.com/acoolnerd" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-gray-300 font-bold hover:text-orange-500 transition-colors duration-200 inline-flex items-center gap-1 group"
+              title="Visit ACoolWEBSITE on Instagram"
+            >
+              <span>ACoolWEBSITE</span>
+              <ExternalLink className="w-3 h-3 text-gray-500 group-hover:text-orange-500 transition-colors" />
+            </a>
+            <span className="text-gray-600">|</span>
+            <span>Made with 🧡 by</span>
+            <a 
+              href="https://linkedin.com/in/acoolnerd" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-gray-300 font-bold hover:text-orange-500 transition-colors duration-200 inline-flex items-center gap-1 group ml-0.5"
+              title="Connect with ACoolNERD on LinkedIn"
+            >
+              <span>ACoolNERD</span>
+              <ExternalLink className="w-3 h-3 text-gray-500 group-hover:text-orange-500 transition-colors" />
+            </a>
+          </div>
+
+          <div className="text-[11px] text-gray-500">
+            Architected & Manifested for Keith McPherson • VYTAL House Master Spec v1.0
           </div>
         </div>
 
