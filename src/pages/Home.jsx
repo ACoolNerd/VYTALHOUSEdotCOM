@@ -397,6 +397,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* VYTAL INNOVATIONS & RETAIL SHOWCASE */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#111827] via-[#0F1522] to-[#111827] border border-[#C5A059]/40 shadow-2xl space-y-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#232D40] pb-6">
+            <div>
+              <span className="text-xs font-mono font-bold tracking-widest text-[#C5A059] uppercase">
+                MSO RETAIL & HARDWARE INNOVATIONS
+              </span>
+              <h2 className="text-3xl font-extrabold text-white mt-1">VYTAL Product Portfolio</h2>
+            </div>
+            <PlaceholderBadge text="MSO RETAIL LINE" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* VYTAL Pouches Card */}
+            <div className="p-6 rounded-2xl bg-[#0B0F17] border border-[#C5A059]/30 hover:border-[#C5A059] transition space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                    SUBLINGUAL POUCHES
+                  </span>
+                  <span className="text-xs font-mono text-gray-400">3 Formulations</span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white group-hover:text-[#C5A059] transition">VYTAL Pouches</h3>
+                <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                  Sublingual functional pouches engineered in three targeted flavors: <strong>Energy</strong> (Soursop Lime), <strong>Tidal</strong> (Sea Moss Cucumber Lime), and <strong>NAD Support</strong> (Blue Soursop Yuzu).
+                </p>
+
+                <div className="p-3 rounded-xl bg-gray-900 border border-gray-800 flex justify-center">
+                  <img src="/assets/pouches/vytal-trio.png" alt="VYTAL Pouches" className="h-36 w-auto object-contain transition transform group-hover:scale-105" />
+                </div>
+              </div>
+
+              <Link
+                to="/products/pouches"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl font-mono text-xs font-bold uppercase bg-[#C5A059] text-black hover:bg-[#E6C687] transition shadow-gold-glow"
+              >
+                <span>EXPLORE VYTAL POUCHES</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* VYTAL AIR Card */}
+            <div className="p-6 rounded-2xl bg-[#0B0F17] border border-sky-500/30 hover:border-sky-400 transition space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                    DRY-POWDER DPI PLATFORM
+                  </span>
+                  <span className="text-xs font-mono text-gray-400">Development Stage</span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white group-hover:text-sky-400 transition">VYTAL AIR</h3>
+                <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                  Capsule-based dry-powder inhalation (DPI) platform under intellectual property, engineering, pulmonary safety, and regulatory development.
+                </p>
+
+                <div className="p-3 rounded-xl bg-gray-900 border border-gray-800 flex justify-center items-center h-36">
+                  <img src="/assets/vytal-air/vytalair-1.png" alt="VYTAL AIR Device" className="h-32 w-auto object-cover rounded-lg transition transform group-hover:scale-105" />
+                </div>
+              </div>
+
+              <Link
+                to="/products/vytal-air"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl font-mono text-xs font-bold uppercase bg-sky-500/20 text-sky-300 hover:bg-sky-500 hover:text-black border border-sky-500/40 transition"
+              >
+                <span>EXPLORE VYTAL AIR PLATFORM</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* MEMBERSHIP TIERS SUMMARY */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-3">

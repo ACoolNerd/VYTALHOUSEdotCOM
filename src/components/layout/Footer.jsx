@@ -82,13 +82,12 @@ export default function Footer() {
 
           {/* Restorations & Services */}
           <div className="space-y-3">
-            <h5 className="font-heading font-bold text-white tracking-wider text-xs">RESTORATIONS (MSO)</h5>
+            <h5 className="font-heading font-bold text-white tracking-wider text-xs">RESTORATIONS & PRODUCTS (MSO)</h5>
             <ul className="space-y-2 font-mono">
               <li><Link to="/reset" className="hover:text-[#C5A059] transition">THE VYTAL RESET ($695)</Link></li>
               <li><Link to="/restorations/origin" className="hover:text-[#C5A059] transition">ORIGIN ($595)</Link></li>
-              <li><Link to="/restorations/charge" className="hover:text-[#C5A059] transition">CHARGE ($395+)</Link></li>
-              <li><Link to="/restorations/flow" className="hover:text-[#C5A059] transition">FLOW ($395+)</Link></li>
-              <li><Link to="/restorations/ground" className="hover:text-[#C5A059] transition">GROUND ($495+)</Link></li>
+              <li><Link to="/products/pouches" className="hover:text-[#C5A059] text-[#C5A059] font-bold transition">VYTAL POUCHES (PILOT)</Link></li>
+              <li><Link to="/products/vytal-air" className="hover:text-[#C5A059] text-sky-400 font-bold transition">VYTAL AIR (DPI PLATFORM)</Link></li>
               <li><Link to="/modalities" className="hover:text-[#C5A059] transition">RAW MODALITIES MENU</Link></li>
             </ul>
           </div>

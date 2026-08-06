@@ -16,6 +16,8 @@ export default function Header() {
     { label: 'EXPERIENCES', path: '/restorations' },
     { label: 'SERVICES', path: '/modalities' },
     { label: 'MEDICAL', path: '/medical' },
+    { label: 'POUCHES', path: '/products/pouches', gold: true },
+    { label: 'VYTAL AIR', path: '/products/vytal-air' },
     { label: 'MEMBERSHIP', path: '/membership' },
     { label: 'ABOUT', path: '/team' },
   ];
@@ -25,6 +27,8 @@ export default function Header() {
     { label: 'RESTORATIONS', path: '/restorations' },
     { label: 'MODALITIES', path: '/modalities' },
     { label: 'MEDICAL', path: '/medical' },
+    { label: 'POUCHES', path: '/products/pouches', gold: true },
+    { label: 'VYTAL AIR', path: '/products/vytal-air' },
     { label: 'MEMBERSHIP', path: '/membership' },
     { label: 'THE INDEX', path: '/index', gold: true },
   ];

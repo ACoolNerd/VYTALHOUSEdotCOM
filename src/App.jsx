@@ -23,6 +23,8 @@ import Contact from './pages/Contact';
 import BookRouter from './pages/BookRouter';
 import AccountPortal from './pages/AccountPortal';
 import LegalPage from './pages/legal/LegalPage';
+import VytalPouches from './pages/VytalPouches';
+import VytalAir from './pages/VytalAir';
 
 export default function App() {
   return (
@@ -48,6 +50,8 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<BookRouter />} />
           <Route path="/account" element={<AccountPortal />} />
+          <Route path="/products/pouches" element={<VytalPouches />} />
+          <Route path="/products/vytal-air" element={<VytalAir />} />
           <Route path="/legal/:slug" element={<LegalPage />} />
         </Routes>
       </main>
