@@ -2,7 +2,7 @@
 // Master Spec v1.0 · 2026-07-31
 
 export const BRAND_TAGLINE = "THE RESTORATION HOUSE. PHYSICIAN-LED & SOCIAL LONGEVITY.";
-export const BRAND_SUBTAGLINE = "RENEW • RESTORE • RECHARGE";
+export const BRAND_SUBTAGLINE = "Renew • Restore • Recharge";
 export const BRAND_HERO_HEADLINE = "DESIGN YOUR BEST LIFE.";
 export const BRAND_HERO = "RECOVER LIKE IT'S CLINICAL. BECAUSE IT IS.";
 export const BRAND_MOTTO = "RITUALS ARE THE NEW ROUTINE.";
@@ -10,11 +10,74 @@ export const BRAND_CORE_PROMISE = "FUNCTIONAL WELLNESS. BACKED BY SCIENCE. DRIVE
 export const BRAND_MOAT_QUOTE = "WE DON'T JUST BUILD BRANDS. WE BUILD LEGACY SYSTEMS.";
 export const BRAND_MISSION = "We exist to make optimal a measurable state — not a feeling. Self-care made social under physician leadership.";
 
+export const MASTER_BRAND_OS_V1 = {
+  version: "V1.0",
+  status: "APPROVED MASTER DIRECTION",
+  primaryBrand: "VYTAL HOUSE",
+  primaryTagline: "Renew • Restore • Recharge",
+  coreAttributes: [
+    "Precise", "Scientific", "Disciplined", "Elevated", "Enduring", 
+    "Premium", "Modern", "Intelligent", "Calm", "Transformational"
+  ],
+  colors: {
+    obsidian: "#0B0C0E",        // Primary environment / background
+    graphite: "#12161F",        // Near-black charcoal secondary surfaces
+    titaniumSilver: "#B7BDC6",  // Typography / interface / detailing
+    iridescentPlatinum: "linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 40%, #CDB8FF 70%, #94A3B8 100%)",
+    acidLime: "#C6FC06",        // Signal only (micro accents, CTA borders, active states)
+    pearlLilac: "#CDB8FF",      // Reflection / supporting highlight only
+  },
+  logoConfigurations: [
+    { id: "01", name: "Master V Monogram", usage: "3D architectural hero mark & app icon" },
+    { id: "02", name: "VYTAL HOUSE Primary Wordmark", usage: "Master header & primary lockups" },
+    { id: "03", name: "Horizontal Lockup", usage: "Header navigation & web banners" },
+    { id: "04", name: "Stacked Lockup", usage: "Document covers & vertical signage" },
+    { id: "05", name: "Circular Seal", usage: "Packaging seals & legal accreditation" },
+    { id: "06", name: "App Icon", usage: "iOS/Android home screen & digital interfaces" },
+    { id: "07", name: "Social Avatar", usage: "Instagram, LinkedIn, X profile media" },
+    { id: "08", name: "Favicon", usage: "Browser tab 32x32 micro mark" },
+    { id: "09", name: "Monogram Badge", usage: "Physical membership cards & hardware" },
+    { id: "10", name: "Simplified Micro-Mark", usage: "Hairline UI badges & small viewports" },
+    { id: "11", name: "Divider / Heartbeat Motif", usage: "Hairline section energy dividers" }
+  ],
+  materials: [
+    "Black Architectural Stone", "Matte Obsidian", "Graphite", "Brushed Titanium",
+    "Smoked Glass", "Soft-Touch Matte Black", "Iridescent Platinum", "Dark Stone with Veining"
+  ],
+  copyFramework: {
+    approved: [
+      "Renew. Restore. Recharge.",
+      "Precision for better performance.",
+      "Recovery designed with intention.",
+      "Daily advantages that compound over time.",
+      "Where recovery, performance and longevity connect.",
+      "A better system for how you recover, perform and live.",
+      "Science. Discipline. Longevity."
+    ],
+    prohibited: [
+      "Change your life forever", "Reverse aging", "Cure", "Guaranteed", "Clinically proven without evidence"
+    ]
+  }
+};
+
+export const MASTER_OS_ASSETS = {
+  overview: "/assets/brand/master-os/00-master-overview.jpg",
+  brandBookCover: "/assets/brand/master-os/01-brand-book-cover.jpg",
+  logoStandards: "/assets/brand/master-os/02-logo-standards.png",
+  colorTypography: "/assets/brand/master-os/03-color-typography.png",
+  iconLibrary: "/assets/brand/master-os/04-icon-library.png",
+  productPackaging: "/assets/brand/master-os/07-product-packaging.png",
+  digitalAppEcosystem: "/assets/brand/master-os/06-digital-app-ecosystem.png",
+  environmentalSignage: "/assets/brand/master-os/08-environmental-signage.jpg",
+  isolatedLogoAssets: "/assets/brand/master-os/01-isolated-logo-assets.png",
+  isolatedIconFamily: "/assets/brand/master-os/04-isolated-icon-family.png"
+};
+
 export const PRISM_SILVER_COLORS = {
-  prismSilver: "#E2E8F0",
-  acidLime: "#CCFF00",
+  prismSilver: "#B7BDC6",
+  acidLime: "#C6FC06",
   aquaEnergy: "#00F0FF",
-  darkBase: "#0B0F17",
+  darkBase: "#0B0C0E",
 };
 
 export const PRISM_ASSETS = {

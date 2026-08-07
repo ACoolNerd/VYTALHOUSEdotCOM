@@ -4,12 +4,68 @@
 
 @layer base {
   body {
-    @apply bg-[#0B0F17] text-gray-100 antialiased;
+    background-color: #0B0C0E;
+    color: #B7BDC6;
+    @apply antialiased font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading tracking-wide uppercase;
+    @apply font-heading tracking-wider uppercase text-white;
   }
+}
+
+/* MASTER BRAND OS V1.0 UTILITIES */
+.bg-obsidian {
+  background-color: #0B0C0E;
+}
+
+.bg-graphite {
+  background-color: #12161F;
+}
+
+.border-titanium {
+  border-color: rgba(183, 189, 198, 0.2);
+}
+
+.text-titanium {
+  color: #B7BDC6;
+}
+
+.text-signal-lime {
+  color: #C6FC06;
+}
+
+.bg-signal-lime {
+  background-color: #C6FC06;
+}
+
+.border-signal-lime {
+  border-color: #C6FC06;
+}
+
+.text-pearl-lilac {
+  color: #CDB8FF;
+}
+
+/* VYTAL Heartbeat / Energy Line Section Divider */
+.vytal-heartbeat-line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(183, 189, 198, 0.3) 30%, rgba(198, 252, 6, 0.6) 50%, rgba(183, 189, 198, 0.3) 70%, transparent 100%);
+}
+
+.vytal-heartbeat-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #C6FC06;
+  box-shadow: 0 0 10px #C6FC06, 0 0 20px #C6FC06;
 }
 
 /* Glassmorphism helpers */

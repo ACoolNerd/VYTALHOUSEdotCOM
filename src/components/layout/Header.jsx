@@ -54,19 +54,19 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-700 p-[1px] shadow-lg shadow-[#00F0FF]/10 group-hover:shadow-[#00F0FF]/30 transition duration-300">
-            <div className="w-full h-full rounded-[11px] bg-[#0F172A] flex items-center justify-center">
-              <span className="font-heading font-black text-sm tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-[#00F0FF] group-hover:scale-110 transition duration-300">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white via-slate-200 to-[#CDB8FF] p-[1px] shadow-lg shadow-[#CDB8FF]/10 group-hover:shadow-[#CDB8FF]/30 transition duration-300">
+            <div className="w-full h-full rounded-[11px] bg-[#0B0C0E] flex items-center justify-center">
+              <span className="font-heading font-black text-sm tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-[#E2E8F0] to-[#CDB8FF] group-hover:scale-110 transition duration-300">
                 V
               </span>
             </div>
           </div>
           <div>
             <span className="font-heading font-extrabold text-xl tracking-widest text-white block leading-none">
-              VYTAL<span className="text-[#CCFF00]">.</span>HOUSE
+              VYTAL<span className="text-[#C6FC06]">.</span>HOUSE
             </span>
-            <span className="text-[9px] font-mono tracking-widest text-[#00F0FF] block uppercase mt-0.5 font-bold">
-              RENEW • RESTORE • RECHARGE
+            <span className="text-[9px] font-mono tracking-widest text-[#B7BDC6] block uppercase mt-0.5 font-bold">
+              Renew • Restore • Recharge
             </span>
           </div>
         </Link>
@@ -80,12 +80,12 @@ export default function Header() {
                 key={item.path + item.label}
                 to={item.path}
                 className={`text-xs font-mono font-semibold tracking-wider transition-colors relative py-1 ${
-                  isActive ? 'text-[#CCFF00]' : 'text-gray-300 hover:text-white'
+                  isActive ? 'text-[#C6FC06]' : 'text-[#B7BDC6] hover:text-white'
                 }`}
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#CCFF00] rounded-full"></span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#C6FC06] rounded-full"></span>
                 )}
               </Link>
             );
@@ -97,26 +97,26 @@ export default function Header() {
           {/* Dual Vocabulary Switcher Toggle */}
           <button
             onClick={() => setNavMode(isVisitor ? 'member' : 'visitor')}
-            className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs font-mono border border-gray-800 bg-gray-900/80 text-gray-300 hover:border-gray-700 transition"
+            className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs font-mono border border-gray-800 bg-[#12161F] text-[#B7BDC6] hover:border-gray-700 transition"
             title="Switch between First-Time Visitor view and Returning Member interior view per Master Spec #10."
           >
             {isVisitor ? (
               <>
-                <ToggleLeft className="w-4 h-4 text-[#00F0FF]" />
-                <span className="text-gray-400">Nav: <strong className="text-[#00F0FF]">First-Time</strong></span>
+                <ToggleLeft className="w-4 h-4 text-[#B7BDC6]" />
+                <span className="text-gray-400">Nav: <strong className="text-[#B7BDC6]">First-Time</strong></span>
               </>
             ) : (
               <>
-                <ToggleRight className="w-4 h-4 text-[#CCFF00]" />
-                <span className="text-gray-400">Nav: <strong className="text-[#CCFF00]">Member</strong></span>
+                <ToggleRight className="w-4 h-4 text-[#C6FC06]" />
+                <span className="text-gray-400">Nav: <strong className="text-[#C6FC06]">Member</strong></span>
               </>
             )}
           </button>
 
-          {/* Book / Reset Primary CTA (Acid Lime) */}
+          {/* Book / Reset Primary CTA (Acid Lime Signal) */}
           <Link
             to="/reset"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-[#CCFF00] text-black hover:bg-[#b8e600] transition shadow-lg shadow-[#CCFF00]/20"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-[#C6FC06] text-black hover:bg-[#b8e600] transition shadow-lg shadow-[#C6FC06]/20 border border-[#C6FC06]"
           >
             <span>START WITH A BASELINE</span>
             <ArrowRight className="w-3.5 h-3.5" />
