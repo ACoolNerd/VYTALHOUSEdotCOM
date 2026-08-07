@@ -403,11 +403,40 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#232D40] pb-6">
             <div>
               <span className="text-xs font-mono font-bold tracking-widest text-[#C5A059] uppercase">
-                MSO RETAIL & HARDWARE INNOVATIONS
+                MSO RETAIL, BRAND & HARDWARE INNOVATIONS
               </span>
-              <h2 className="text-3xl font-extrabold text-white mt-1">VYTAL Product Portfolio</h2>
+              <h2 className="text-3xl font-extrabold text-white mt-1">VYTAL Brand & Product System</h2>
             </div>
             <PlaceholderBadge text="MSO RETAIL LINE" />
+          </div>
+
+          {/* Brand System Sheet Showcase */}
+          <div className="p-6 rounded-2xl bg-[#0B0F17] border border-[#C5A059]/40 flex flex-col md:flex-row items-center gap-6">
+            <div className="md:w-1/2 space-y-3">
+              <span className="px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30">
+                OFFICIAL BRAND DESIGN SYSTEM
+              </span>
+              <h3 className="text-2xl font-bold text-white">Interlocking Monogram & Hardware Line</h3>
+              <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                The official architectural 3D chrome <strong>VH</strong> monogram emblem, circular seal lockup (<em>Renew • Restore • Recharge</em>), matte-black canisters with neon-gold accent rings, and icon system.
+              </p>
+              <div className="pt-2">
+                <Link
+                  to="/products/pouches"
+                  className="inline-flex items-center gap-2 text-xs font-mono text-[#C5A059] font-bold hover:underline"
+                >
+                  <span>VIEW POUCH HARDWARE IMPLEMENTATION</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+            <div className="md:w-1/2 overflow-hidden rounded-xl border border-gray-800 bg-black">
+              <img
+                src="/assets/brand/vytal-design-system.png"
+                alt="VYTAL House Brand Design System"
+                className="w-full h-auto object-cover hover:scale-105 transition duration-500"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -426,8 +455,9 @@ export default function Home() {
                   Sublingual functional pouches engineered in three targeted flavors: <strong>Energy</strong> (Soursop Lime), <strong>Tidal</strong> (Sea Moss Cucumber Lime), and <strong>NAD Support</strong> (Blue Soursop Yuzu).
                 </p>
 
-                <div className="p-3 rounded-xl bg-gray-900 border border-gray-800 flex justify-center">
-                  <img src="/assets/pouches/vytal-trio.png" alt="VYTAL Pouches" className="h-36 w-auto object-contain transition transform group-hover:scale-105" />
+                <div className="p-3 rounded-xl bg-gray-900 border border-gray-800 flex justify-center items-center gap-4">
+                  <img src="/assets/pouches/vytal-tidal-tin.png" alt="VYTAL Tidal Pouch Tin" className="h-28 w-auto object-contain transition transform group-hover:scale-105" />
+                  <img src="/assets/pouches/vytal-nad-support-tin.png" alt="VYTAL NAD Support Pouch Tin" className="h-28 w-auto object-contain transition transform group-hover:scale-105" />
                 </div>
               </div>
 

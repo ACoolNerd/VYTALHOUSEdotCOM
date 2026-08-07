@@ -32,17 +32,27 @@
   border: 1px solid rgba(14, 165, 233, 0.25);
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* Metallic Design System Helpers */
+.metallic-card {
+  background: linear-gradient(180deg, rgba(26, 32, 44, 0.85) 0%, rgba(11, 15, 23, 0.95) 100%);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
-::-webkit-scrollbar-track {
-  background: #0B0F17;
+
+.metallic-badge {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
-::-webkit-scrollbar-thumb {
-  background: #232D40;
-  border-radius: 4px;
+
+.accent-ring-gold {
+  box-shadow: 0 0 0 1px rgba(197, 160, 89, 0.4), 0 0 15px rgba(197, 160, 89, 0.15);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #C5A059;
+
+.accent-ring-lime {
+  box-shadow: 0 0 0 1px rgba(132, 204, 22, 0.4), 0 0 15px rgba(132, 204, 22, 0.15);
+}
+
+.accent-ring-sky {
+  box-shadow: 0 0 0 1px rgba(14, 165, 233, 0.4), 0 0 15px rgba(14, 165, 233, 0.15);
 }

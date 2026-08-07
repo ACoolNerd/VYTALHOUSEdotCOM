@@ -54,15 +54,17 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-[#1A2234] border border-[#C5A059]/40 flex items-center justify-center group-hover:border-[#C5A059] transition shadow-gold-glow">
-            <Activity className="w-5 h-5 text-[#C5A059]" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-b from-[#1E293B] to-[#0F172A] border border-[#C5A059]/60 flex items-center justify-center group-hover:border-[#C5A059] transition shadow-gold-glow relative">
+            <span className="font-heading font-black text-xs tracking-tighter text-[#C5A059] group-hover:scale-110 transition duration-300">
+              VH
+            </span>
           </div>
           <div>
             <span className="font-heading font-extrabold text-xl tracking-widest text-white block leading-none">
               VYTAL<span className="text-[#C5A059]">.</span>HOUSE
             </span>
-            <span className="text-[9px] font-mono tracking-widest text-gray-400 block uppercase mt-0.5">
-              THE RESTORATION HOUSE
+            <span className="text-[9px] font-mono tracking-widest text-[#C5A059] block uppercase mt-0.5 font-bold">
+              RENEW • RESTORE • RECHARGE
             </span>
           </div>
         </Link>

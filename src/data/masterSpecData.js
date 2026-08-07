@@ -2,8 +2,16 @@
 // Master Spec v1.0 · 2026-07-31
 
 export const BRAND_TAGLINE = "THE RESTORATION HOUSE. PHYSICIAN-LED & SOCIAL LONGEVITY.";
+export const BRAND_SUBTAGLINE = "RENEW • RESTORE • RECHARGE";
 export const BRAND_HERO = "RECOVER LIKE IT'S CLINICAL. BECAUSE IT IS.";
 export const BRAND_MISSION = "We exist to make optimal a measurable state — not a feeling. Self-care made social under physician leadership.";
+
+export const BRAND_ASSETS = {
+  designSystemSheet: "/assets/brand/vytal-design-system.png",
+  nadSupportTin: "/assets/pouches/vytal-nad-support-tin.png",
+  tidalTin: "/assets/pouches/vytal-tidal-tin.png",
+  pouchesTrio: "/assets/pouches/vytal-trio.png",
+};
 
 export const MEDICAL_DIRECTOR = {
   name: "Dr. Abasi Bomani, MD",

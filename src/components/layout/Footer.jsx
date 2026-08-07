@@ -63,18 +63,30 @@ export default function Footer() {
         {/* Links Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Brief */}
-          <div className="md:col-span-1 space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-[#1A2234] border border-[#C5A059] flex items-center justify-center">
-                <Activity className="w-4 h-4 text-[#C5A059]" />
+          <div className="md:col-span-1 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-b from-[#1E293B] to-[#0F172A] border border-[#C5A059] flex items-center justify-center shadow-gold-glow">
+                <span className="font-heading font-black text-xs text-[#C5A059] tracking-tighter">VH</span>
               </div>
-              <span className="font-heading font-extrabold text-lg tracking-widest text-white">
-                VYTAL<span className="text-[#C5A059]">.</span>HOUSE
-              </span>
+              <div>
+                <span className="font-heading font-extrabold text-lg tracking-widest text-white block leading-none">
+                  VYTAL<span className="text-[#C5A059]">.</span>HOUSE
+                </span>
+                <span className="text-[9px] font-mono tracking-widest text-[#C5A059] font-bold block uppercase mt-0.5">
+                  RENEW • RESTORE • RECHARGE
+                </span>
+              </div>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+
+            <p className="text-gray-400 leading-relaxed text-xs">
               The first physician-anchored restoration house in Maryland. Making optimal a measurable state — not a feeling.
             </p>
+
+            <div className="p-2.5 rounded-xl bg-[#0F1522] border border-[#C5A059]/30 inline-flex items-center gap-2 text-[10px] font-mono text-gray-300">
+              <span className="w-2 h-2 rounded-full bg-[#C5A059] animate-ping"></span>
+              <span>OFFICIAL BRAND DESIGN SYSTEM 2026</span>
+            </div>
+
             <p className="font-mono text-gray-500 text-[11px]">
               © 2026 VYTAL House. All Rights Reserved.
             </p>
