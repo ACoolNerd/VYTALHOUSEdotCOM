@@ -1,52 +1,64 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Activity, ShieldCheck, ArrowRight, CheckCircle, Flame, Clock, Award, Sparkles, UserCheck, Stethoscope, Users, Coffee, HeartPulse } from 'lucide-react';
-import { BRAND_HERO, BRAND_MISSION, VYTAL_RESET_FLAGSHIP, RESTORATIONS_LIST, MEMBERSHIP_TIERS, ACCESS_SCHEDULE, MEDICAL_DIRECTOR, OPEN_DECISIONS } from '../data/masterSpecData';
+import { Activity, ShieldCheck, ArrowRight, CheckCircle, Flame, Clock, Award, Sparkles, UserCheck, Stethoscope, Users, Coffee, HeartPulse, Zap } from 'lucide-react';
+import { BRAND_HERO_HEADLINE, BRAND_SUBTAGLINE, BRAND_MOTTO, BRAND_CORE_PROMISE, BRAND_MOAT_QUOTE, BRAND_MISSION, VYTAL_RESET_FLAGSHIP, RESTORATIONS_LIST, MEMBERSHIP_TIERS, ACCESS_SCHEDULE, MEDICAL_DIRECTOR, OPEN_DECISIONS, PRISM_ASSETS } from '../data/masterSpecData';
 import PlaceholderBadge from '../components/ui/PlaceholderBadge';
 import VytalIndexCalculator from '../components/ui/VytalIndexCalculator';
 import CPOMEntityBadge from '../components/ui/CPOMEntityBadge';
 import FacilityPhotoGallery from '../components/ui/FacilityPhotoGallery';
 import MemberSuccessShowcase from '../components/ui/MemberSuccessShowcase';
+import EcosystemFlywheel from '../components/ui/EcosystemFlywheel';
 
 export default function Home() {
   return (
     <div className="space-y-24 pb-20">
       
-      {/* IMMERSIVE HERO SECTION WITH REECESS-INSPIRED AMBIENT HERO IMAGE */}
-      <section className="relative min-h-[90vh] flex flex-col justify-between pt-16 pb-12 overflow-hidden border-b border-[#232D40]">
+      {/* IMMERSIVE HERO SECTION WITH PRISM SILVER AURA */}
+      <section className="relative min-h-[92vh] flex flex-col justify-between pt-16 pb-12 overflow-hidden border-b border-[#232D40]">
         
         {/* Full-bleed Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/imgi_28_5a62c57a6a6418c9a87b77167658eaa53a242c62.png" 
-            alt="VYTAL House Interior Biohouse" 
+            alt="VYTAL House Biohouse Atmosphere" 
             className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-110 saturate-[0.85] transition duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/75 to-[#0B0F17]/90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/80 to-[#0B0F17]/95" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F17]/95 via-transparent to-[#0B0F17]/95" />
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#C5A059]/15 rounded-full blur-[140px] pointer-events-none" />
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#00F0FF]/15 rounded-full blur-[140px] pointer-events-none" />
         </div>
 
         {/* Hero Content Container */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-8 relative z-10 my-auto pt-8">
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-[#C5A059]/40 text-xs font-mono text-[#C5A059] shadow-gold-glow">
-            <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />
-            <span>THE RESTORATION HOUSE • PHYSICIAN-LED & SOCIAL LONGEVITY</span>
-            <span className="text-gray-500">|</span>
-            <PlaceholderBadge text="MARYLAND" />
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-[#CCFF00]/40 text-xs font-mono text-[#CCFF00] shadow-lg">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{BRAND_SUBTAGLINE}</span>
+              <span className="text-gray-500">|</span>
+              <PlaceholderBadge text="MARYLAND" />
+            </div>
+
+            <span className="text-xs font-mono font-bold text-[#00F0FF] border border-[#00F0FF]/40 px-3.5 py-1.5 rounded-full bg-[#131A26]">
+              PRISM SILVER EDITION
+            </span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.05] uppercase font-heading drop-shadow-2xl">
-            RECOVER LIKE IT'S CLINICAL.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#E6C687] to-amber-200">
-              BECAUSE IT IS.
+            DESIGN YOUR <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-[#00F0FF]">
+              BEST LIFE.
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-200 font-light max-w-3xl mx-auto leading-relaxed drop-shadow-md">
-            {BRAND_MISSION} Every protocol runs under a named medical director — not a liability waiver.
-          </p>
+          <div className="space-y-2">
+            <p className="text-base sm:text-lg text-[#CCFF00] font-mono font-bold tracking-wider uppercase">
+              "{BRAND_MOTTO}"
+            </p>
+            <p className="text-sm sm:text-base text-gray-300 font-light max-w-3xl mx-auto leading-relaxed">
+              {BRAND_CORE_PROMISE} Every protocol runs under direct physician authority — not a liability waiver.
+            </p>
+          </div>
 
           {/* Primary Action Buttons */}
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -397,45 +409,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VYTAL INNOVATIONS & RETAIL SHOWCASE */}
+      {/* ECOSYSTEM FLYWHEEL SECTION */}
+      <EcosystemFlywheel />
+
+      {/* VYTAL INNOVATIONS & PRISM SILVER BRAND SHOWCASE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#111827] via-[#0F1522] to-[#111827] border border-[#C5A059]/40 shadow-2xl space-y-8">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#111827] via-[#0F1522] to-[#111827] border border-[#00F0FF]/40 shadow-2xl space-y-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#232D40] pb-6">
             <div>
-              <span className="text-xs font-mono font-bold tracking-widest text-[#C5A059] uppercase">
-                MSO RETAIL, BRAND & HARDWARE INNOVATIONS
+              <span className="text-xs font-mono font-bold tracking-widest text-[#00F0FF] uppercase">
+                BRAND SYSTEM GUIDE • PRISM SILVER EDITION 2026
               </span>
-              <h2 className="text-3xl font-extrabold text-white mt-1">VYTAL Brand & Product System</h2>
+              <h2 className="text-3xl font-extrabold text-white mt-1">Unified Visual & Product Language</h2>
             </div>
-            <PlaceholderBadge text="MSO RETAIL LINE" />
+            <span className="text-xs font-mono font-bold text-[#CCFF00] border border-[#CCFF00]/40 px-3 py-1.5 rounded-full bg-[#131A26]">
+              {BRAND_SUBTAGLINE}
+            </span>
           </div>
 
-          {/* Brand System Sheet Showcase */}
-          <div className="p-6 rounded-2xl bg-[#0B0F17] border border-[#C5A059]/40 flex flex-col md:flex-row items-center gap-6">
-            <div className="md:w-1/2 space-y-3">
-              <span className="px-2.5 py-1 rounded text-[10px] font-mono font-bold uppercase bg-[#C5A059]/20 text-[#C5A059] border border-[#C5A059]/30">
-                OFFICIAL BRAND DESIGN SYSTEM
+          {/* Key Art Showcase Carousel Grid (Slides 06, 07, 09, 10) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-gray-800 bg-[#0B0F17] overflow-hidden space-y-3 p-4">
+              <span className="text-[10px] font-mono font-bold text-[#00F0FF] tracking-wider block uppercase">
+                09 / 10 • WEB + INVESTOR BANNER
               </span>
-              <h3 className="text-2xl font-bold text-white">Interlocking Monogram & Hardware Line</h3>
-              <p className="text-xs text-gray-300 font-sans leading-relaxed">
-                The official architectural 3D chrome <strong>VH</strong> monogram emblem, circular seal lockup (<em>Renew • Restore • Recharge</em>), matte-black canisters with neon-gold accent rings, and icon system.
-              </p>
-              <div className="pt-2">
-                <Link
-                  to="/products/pouches"
-                  className="inline-flex items-center gap-2 text-xs font-mono text-[#C5A059] font-bold hover:underline"
-                >
-                  <span>VIEW POUCH HARDWARE IMPLEMENTATION</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+              <img src={PRISM_ASSETS.webInvestorBanner} alt="Web and Investor Banner" className="w-full h-56 object-cover rounded-xl border border-gray-800 hover:scale-105 transition duration-500" />
             </div>
-            <div className="md:w-1/2 overflow-hidden rounded-xl border border-gray-800 bg-black">
-              <img
-                src="/assets/brand/vytal-design-system.png"
-                alt="VYTAL House Brand Design System"
-                className="w-full h-auto object-cover hover:scale-105 transition duration-500"
-              />
+
+            <div className="rounded-2xl border border-gray-800 bg-[#0B0F17] overflow-hidden space-y-3 p-4">
+              <span className="text-[10px] font-mono font-bold text-[#CCFF00] tracking-wider block uppercase">
+                10 / 10 • SOCIAL + OOH KEY ART
+              </span>
+              <img src={PRISM_ASSETS.socialOohKeyArt} alt="Social and OOH Key Art" className="w-full h-56 object-cover rounded-xl border border-gray-800 hover:scale-105 transition duration-500" />
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 bg-[#0B0F17] overflow-hidden space-y-3 p-4">
+              <span className="text-[10px] font-mono font-bold text-gray-400 tracking-wider block uppercase">
+                06 / 10 • DIGITAL SAMPLES
+              </span>
+              <img src={PRISM_ASSETS.digitalSamples} alt="Digital Samples" className="w-full h-56 object-cover rounded-xl border border-gray-800 hover:scale-105 transition duration-500" />
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 bg-[#0B0F17] overflow-hidden space-y-3 p-4">
+              <span className="text-[10px] font-mono font-bold text-purple-400 tracking-wider block uppercase">
+                07 / 10 • ENVIRONMENTAL SAMPLES
+              </span>
+              <img src={PRISM_ASSETS.environmentalSamples} alt="Environmental Samples" className="w-full h-56 object-cover rounded-xl border border-gray-800 hover:scale-105 transition duration-500" />
             </div>
           </div>
 

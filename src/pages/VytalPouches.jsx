@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ShieldCheck, Zap, Droplets, Activity, ArrowRight, CheckCircle2, Package, Info, AlertCircle, ShoppingBag, Layers, Eye } from 'lucide-react';
 import PlaceholderBadge from '../components/ui/PlaceholderBadge';
-import { BRAND_SUBTAGLINE, BRAND_ASSETS } from '../data/masterSpecData';
+import { BRAND_SUBTAGLINE, PRISM_ASSETS } from '../data/masterSpecData';
 
 export default function VytalPouches() {
   const [selectedProduct, setSelectedProduct] = useState(null);

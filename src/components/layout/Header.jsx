@@ -54,16 +54,18 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-b from-[#1E293B] to-[#0F172A] border border-[#C5A059]/60 flex items-center justify-center group-hover:border-[#C5A059] transition shadow-gold-glow relative">
-            <span className="font-heading font-black text-xs tracking-tighter text-[#C5A059] group-hover:scale-110 transition duration-300">
-              VH
-            </span>
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-700 p-[1px] shadow-lg shadow-[#00F0FF]/10 group-hover:shadow-[#00F0FF]/30 transition duration-300">
+            <div className="w-full h-full rounded-[11px] bg-[#0F172A] flex items-center justify-center">
+              <span className="font-heading font-black text-sm tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-[#00F0FF] group-hover:scale-110 transition duration-300">
+                V
+              </span>
+            </div>
           </div>
           <div>
             <span className="font-heading font-extrabold text-xl tracking-widest text-white block leading-none">
-              VYTAL<span className="text-[#C5A059]">.</span>HOUSE
+              VYTAL<span className="text-[#CCFF00]">.</span>HOUSE
             </span>
-            <span className="text-[9px] font-mono tracking-widest text-[#C5A059] block uppercase mt-0.5 font-bold">
+            <span className="text-[9px] font-mono tracking-widest text-[#00F0FF] block uppercase mt-0.5 font-bold">
               RENEW • RESTORE • RECHARGE
             </span>
           </div>
@@ -78,25 +80,19 @@ export default function Header() {
                 key={item.path + item.label}
                 to={item.path}
                 className={`text-xs font-mono font-semibold tracking-wider transition-colors relative py-1 ${
-                  item.gold
-                    ? 'text-[#C5A059] hover:text-amber-300 font-bold'
-                    : item.highlight
-                    ? 'text-sky-400 hover:text-sky-300 font-bold'
-                    : isActive
-                    ? 'text-white'
-                    : 'text-gray-400 hover:text-white'
+                  isActive ? 'text-[#CCFF00]' : 'text-gray-300 hover:text-white'
                 }`}
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#C5A059] rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#CCFF00] rounded-full"></span>
                 )}
               </Link>
             );
           })}
         </nav>
 
-        {/* Right Section: Vocabulary Switcher & CTA */}
+        {/* Header Right Actions */}
         <div className="hidden sm:flex items-center gap-4">
           {/* Dual Vocabulary Switcher Toggle */}
           <button
@@ -106,21 +102,21 @@ export default function Header() {
           >
             {isVisitor ? (
               <>
-                <ToggleLeft className="w-4 h-4 text-sky-400" />
-                <span className="text-gray-400">Nav: <strong className="text-sky-400">First-Time</strong></span>
+                <ToggleLeft className="w-4 h-4 text-[#00F0FF]" />
+                <span className="text-gray-400">Nav: <strong className="text-[#00F0FF]">First-Time</strong></span>
               </>
             ) : (
               <>
-                <ToggleRight className="w-4 h-4 text-[#C5A059]" />
-                <span className="text-gray-400">Nav: <strong className="text-[#C5A059]">Member</strong></span>
+                <ToggleRight className="w-4 h-4 text-[#CCFF00]" />
+                <span className="text-gray-400">Nav: <strong className="text-[#CCFF00]">Member</strong></span>
               </>
             )}
           </button>
 
-          {/* Book / Reset Primary CTA */}
+          {/* Book / Reset Primary CTA (Acid Lime) */}
           <Link
             to="/reset"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-bold uppercase tracking-wider bg-[#C5A059] text-black hover:bg-[#E6C687] transition shadow-gold-glow"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-mono font-bold uppercase tracking-wider bg-[#CCFF00] text-black hover:bg-[#b8e600] transition shadow-lg shadow-[#CCFF00]/20"
           >
             <span>START WITH A BASELINE</span>
             <ArrowRight className="w-3.5 h-3.5" />

@@ -1,6 +1,7 @@
 import React from 'react';
 import PlaceholderBadge from '../components/ui/PlaceholderBadge';
 import { Building, MapPin, Camera, Zap, ShieldCheck, Sparkles } from 'lucide-react';
+import { PRISM_ASSETS, BRAND_SUBTAGLINE } from '../data/masterSpecData';
 
 export default function House() {
   const galleryImages = [
@@ -15,13 +16,39 @@ export default function House() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
       <div className="text-center max-w-3xl mx-auto space-y-3">
-        <span className="text-xs font-mono font-bold tracking-widest text-[#C5A059] uppercase">
-          THE SPACE & EQUIPMENT ARCHITECTURE
-        </span>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono bg-[#00F0FF]/10 text-[#00F0FF] border border-[#00F0FF]/30">
+          <Sparkles className="w-3.5 h-3.5" />
+          <span>ENVIRONMENTAL ARCHITECTURE & SIGNAGE</span>
+        </div>
         <h1 className="text-4xl font-extrabold text-white">THE HOUSE</h1>
         <p className="text-sm text-gray-300">
           Designed for optimal thermal contrast, acoustic entrainment, and medical diagnostic flow.
         </p>
+      </div>
+
+      {/* Official Environmental Samples Showcase (Prism Silver Edition) */}
+      <div className="p-8 rounded-3xl bg-[#131A26] border border-[#00F0FF]/40 space-y-6 shadow-2xl">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-gray-800">
+          <div>
+            <span className="text-[10px] font-mono font-bold text-[#00F0FF] tracking-widest uppercase">
+              07 / 10 • ENVIRONMENTAL SAMPLES
+            </span>
+            <h3 className="text-xl font-heading font-black text-white">
+              Flagship Signage, Wayfinding & Interior Identity
+            </h3>
+          </div>
+          <span className="text-xs font-mono font-bold text-[#CCFF00] border border-[#CCFF00]/40 px-3 py-1 rounded-full bg-[#0B0F17]">
+            {BRAND_SUBTAGLINE}
+          </span>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden border border-gray-800 bg-black group relative">
+          <img
+            src={PRISM_ASSETS.environmentalSamples}
+            alt="VYTAL House Environmental Samples Architecture"
+            className="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-500"
+          />
+        </div>
       </div>
 
       {/* Site Comparison Card (Open Decision ⚑) */}

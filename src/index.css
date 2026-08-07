@@ -32,27 +32,47 @@
   border: 1px solid rgba(14, 165, 233, 0.25);
 }
 
-/* Metallic Design System Helpers */
+/* Metallic & Prism Silver Design System Helpers */
 .metallic-card {
   background: linear-gradient(180deg, rgba(26, 32, 44, 0.85) 0%, rgba(11, 15, 23, 0.95) 100%);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid rgba(226, 232, 240, 0.25);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .metallic-badge {
   background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
-  border: 1px solid rgba(197, 160, 89, 0.4);
+  border: 1px solid rgba(204, 255, 0, 0.4);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.accent-ring-gold {
-  box-shadow: 0 0 0 1px rgba(197, 160, 89, 0.4), 0 0 15px rgba(197, 160, 89, 0.15);
+.bg-acid-lime {
+  background-color: #CCFF00;
+}
+
+.text-acid-lime {
+  color: #CCFF00;
+}
+
+.border-acid-lime {
+  border-color: #CCFF00;
+}
+
+.text-aqua-energy {
+  color: #00F0FF;
+}
+
+.border-aqua-energy {
+  border-color: #00F0FF;
 }
 
 .accent-ring-lime {
-  box-shadow: 0 0 0 1px rgba(132, 204, 22, 0.4), 0 0 15px rgba(132, 204, 22, 0.15);
+  box-shadow: 0 0 0 1px rgba(204, 255, 0, 0.4), 0 0 15px rgba(204, 255, 0, 0.2);
 }
 
-.accent-ring-sky {
-  box-shadow: 0 0 0 1px rgba(14, 165, 233, 0.4), 0 0 15px rgba(14, 165, 233, 0.15);
+.accent-ring-aqua {
+  box-shadow: 0 0 0 1px rgba(0, 240, 255, 0.4), 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.prism-silver-glow {
+  box-shadow: 0 0 25px rgba(226, 232, 240, 0.15), 0 0 40px rgba(0, 240, 255, 0.1);
 }

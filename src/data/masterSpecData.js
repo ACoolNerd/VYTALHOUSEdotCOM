@@ -3,15 +3,82 @@
 
 export const BRAND_TAGLINE = "THE RESTORATION HOUSE. PHYSICIAN-LED & SOCIAL LONGEVITY.";
 export const BRAND_SUBTAGLINE = "RENEW • RESTORE • RECHARGE";
+export const BRAND_HERO_HEADLINE = "DESIGN YOUR BEST LIFE.";
 export const BRAND_HERO = "RECOVER LIKE IT'S CLINICAL. BECAUSE IT IS.";
+export const BRAND_MOTTO = "RITUALS ARE THE NEW ROUTINE.";
+export const BRAND_CORE_PROMISE = "FUNCTIONAL WELLNESS. BACKED BY SCIENCE. DRIVEN BY PURPOSE.";
+export const BRAND_MOAT_QUOTE = "WE DON'T JUST BUILD BRANDS. WE BUILD LEGACY SYSTEMS.";
 export const BRAND_MISSION = "We exist to make optimal a measurable state — not a feeling. Self-care made social under physician leadership.";
 
-export const BRAND_ASSETS = {
-  designSystemSheet: "/assets/brand/vytal-design-system.png",
+export const PRISM_SILVER_COLORS = {
+  prismSilver: "#E2E8F0",
+  acidLime: "#CCFF00",
+  aquaEnergy: "#00F0FF",
+  darkBase: "#0B0F17",
+};
+
+export const PRISM_ASSETS = {
+  digitalSamples: "/assets/brand/prism-silver/06-digital-samples.jpg",
+  environmentalSamples: "/assets/brand/prism-silver/07-environmental-samples.jpg",
+  ecosystemFlywheel: "/assets/brand/prism-silver/08-ecosystem-flywheel.jpg",
+  webInvestorBanner: "/assets/brand/prism-silver/09-web-investor-banner.jpg",
+  socialOohKeyArt: "/assets/brand/prism-silver/10-social-ooh-key-art.png",
+  masterDesignSheet: "/assets/brand/vytal-design-system.png",
   nadSupportTin: "/assets/pouches/vytal-nad-support-tin.png",
   tidalTin: "/assets/pouches/vytal-tidal-tin.png",
   pouchesTrio: "/assets/pouches/vytal-trio.png",
 };
+
+export const FLYWHEEL_STEPS = [
+  {
+    id: 'rituals',
+    title: 'VYTAL FUNCTIONAL RITUALS',
+    category: 'DAILY ROUTINE',
+    color: '#CCFF00',
+    desc: 'Daily rituals and protocols engineered for real results.',
+    icon: 'Sparkles'
+  },
+  {
+    id: 'membership',
+    title: 'VYTAL BLACK MEMBERSHIP',
+    category: 'ELEVATED ACCESS',
+    color: '#00F0FF',
+    desc: 'Exclusive access, elevated experiences, and community that compounds.',
+    icon: 'ShieldCheck'
+  },
+  {
+    id: 'subscriptions',
+    title: 'SUBSCRIPTIONS',
+    category: 'ONGOING VALUE',
+    color: '#38BDF8',
+    desc: 'Curated products, digital experiences, and ongoing value delivery.',
+    icon: 'RefreshCw'
+  },
+  {
+    id: 'outcomes',
+    title: 'CUSTOMER DATA + OUTCOMES',
+    category: 'VALIDATION',
+    color: '#84CC16',
+    desc: 'Real-world data and outcomes fuel insights and validation.',
+    icon: 'BarChart3'
+  },
+  {
+    id: 'personalization',
+    title: 'NEW PRODUCTS + PERSONALIZATION',
+    category: 'INNOVATION',
+    color: '#E2E8F0',
+    desc: 'Smarter innovation and tailored experiences that anticipate needs.',
+    icon: 'Box'
+  },
+  {
+    id: 'protocols',
+    title: 'VYTAL PROTOCOLS',
+    category: 'FOUNDATION',
+    color: '#A855F7',
+    desc: 'The foundation—standards, safety, and structure that ensure consistency and trust.',
+    icon: 'Layers'
+  }
+];
 
 export const MEDICAL_DIRECTOR = {
   name: "Dr. Abasi Bomani, MD",

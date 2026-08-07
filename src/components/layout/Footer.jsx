@@ -65,14 +65,18 @@ export default function Footer() {
           {/* Brand Brief */}
           <div className="md:col-span-1 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-b from-[#1E293B] to-[#0F172A] border border-[#C5A059] flex items-center justify-center shadow-gold-glow">
-                <span className="font-heading font-black text-xs text-[#C5A059] tracking-tighter">VH</span>
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-700 p-[1px] shadow-lg shadow-[#00F0FF]/10">
+                <div className="w-full h-full rounded-[11px] bg-[#0F172A] flex items-center justify-center">
+                  <span className="font-heading font-black text-sm tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-[#00F0FF]">
+                    V
+                  </span>
+                </div>
               </div>
               <div>
                 <span className="font-heading font-extrabold text-lg tracking-widest text-white block leading-none">
-                  VYTAL<span className="text-[#C5A059]">.</span>HOUSE
+                  VYTAL<span className="text-[#CCFF00]">.</span>HOUSE
                 </span>
-                <span className="text-[9px] font-mono tracking-widest text-[#C5A059] font-bold block uppercase mt-0.5">
+                <span className="text-[9px] font-mono tracking-widest text-[#00F0FF] font-bold block uppercase mt-0.5">
                   RENEW • RESTORE • RECHARGE
                 </span>
               </div>
@@ -82,9 +86,14 @@ export default function Footer() {
               The first physician-anchored restoration house in Maryland. Making optimal a measurable state — not a feeling.
             </p>
 
-            <div className="p-2.5 rounded-xl bg-[#0F1522] border border-[#C5A059]/30 inline-flex items-center gap-2 text-[10px] font-mono text-gray-300">
-              <span className="w-2 h-2 rounded-full bg-[#C5A059] animate-ping"></span>
-              <span>OFFICIAL BRAND DESIGN SYSTEM 2026</span>
+            <div className="p-2.5 rounded-xl bg-[#0F1522] border border-[#CCFF00]/30 space-y-1">
+              <div className="flex items-center gap-2 text-[10px] font-mono text-gray-300">
+                <span className="w-2 h-2 rounded-full bg-[#CCFF00] animate-ping"></span>
+                <span className="text-[#CCFF00] font-bold">PRISM SILVER EDITION 2026</span>
+              </div>
+              <p className="text-[10px] font-mono text-gray-400 italic">
+                "WE DON'T JUST BUILD BRANDS. WE BUILD LEGACY SYSTEMS."
+              </p>
             </div>
 
             <p className="font-mono text-gray-500 text-[11px]">
